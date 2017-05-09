@@ -1472,6 +1472,8 @@ public class JSONObject {
             sb.append(numberToString((Number) value));
         } else if (value instanceof Boolean) {
             sb.append(value.toString());
+		} else if (value instanceof String) {
+            sb.append(value.toString());
         } else if (value instanceof JSONString) {
             Object o;
             try {
